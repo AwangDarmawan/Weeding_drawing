@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
+body {
+  background-color: #f6f3ef;
+}
+
+@font-face {
+  font-family: "Feltpen";
+  src: url("./assets/Font/FELTPEN_.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PetitCochon";
+  src: url("./assets/fonts/PetitCochon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* timeline */
+@keyframes growLine {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.animate-growLine {
+  animation: growLine 2s ease forwards;
+}
