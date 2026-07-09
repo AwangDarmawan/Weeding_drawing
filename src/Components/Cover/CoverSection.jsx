@@ -434,7 +434,7 @@ export default function CoverSection() {
             italic
             "
           >
-            {nama}
+             {nama}
           </p>
           
         </div>
