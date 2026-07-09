@@ -7,9 +7,11 @@ import Sprakless from "../../assets/Img/sparkless.png"
 import Garis from "../../assets/Img/garisatas.png"
 import { IoHeart } from "react-icons/io5";
 import { Sparkle, Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useParams} from "react-router-dom";
 export default function CoverSection() {
     const navigate = useNavigate();
+      
+      const { nama } = useParams();
 
   return (
     <section
@@ -425,15 +427,15 @@ export default function CoverSection() {
 
             font-black
             mt-3
-            text-md
-            md:text-md
+            text-lg
+            md:text-lg
             
             font-feltpen
             text-[#8A1C14]
             italic
             "
           >
-            Custom Tamu 
+            {nama}
           </p>
           
         </div>
@@ -442,8 +444,7 @@ export default function CoverSection() {
           {/* <InvitationButton /> */}
              <button 
            
-       data-aos ="fade-up-left"
-         data-aos-delay="8000"
+       
          onClick={() => {
         navigate("/home");
       }}

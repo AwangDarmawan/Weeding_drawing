@@ -156,7 +156,7 @@ export default function RsvpForm({ PropfetchData }) {
             focus:ring-[#8A1C14]/10
           "
         >
-          <option value="Ya">✅ Hadir</option>
+          <option value="Ya">✅Ya</option>
           <option value="Mungkin">🤔 Mungkin</option>
           <option value="Tidak">❌ Tidak Hadir</option>
         </select>

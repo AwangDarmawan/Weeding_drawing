@@ -6,6 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import CoverPage from "./Components/Cover/CoverSection";
 import HomePage from "./Pages/HomePage";
+import AdminPage from "./Pages/AdminPage";
+import PesanAdminPage from "./Pages/PesanAdminPage";
 
 
 
@@ -19,10 +21,10 @@ function App() {
     <>
        <BrowserRouter>
           <Routes>
-           {/* <Route path="/" element={<Adminpage/>} />
-               <Route path="/admin/pesan" element={<PesanAdminPage/>} /> */}
+           <Route path="/" element={<AdminPage/>} />
+               <Route path="/admin/pesan" element={<PesanAdminPage/>} />
 
-               <Route path="/" element={<CoverPage/>} />
+               <Route path="/:nama" element={<CoverPage/>} />
              <Route path="/home" element={<HomePage />} />
           </Routes>
       <ToastContainer

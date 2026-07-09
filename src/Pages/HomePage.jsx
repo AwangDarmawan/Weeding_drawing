@@ -12,6 +12,7 @@ import RsvpForm from '../Components/RSVP/RsvpForm'
 import RsvpCard from '../Components/RSVP/RsvpCard'
 import RsvpSection from '../Components/RSVP/RsvpSection'
 import Footer from '../Components/Footer'
+import Mengundang from '../Components/Mengundang/Mengundang'
 
 function HomePage() {
   return (
@@ -28,6 +29,7 @@ function HomePage() {
      <WeddingGift/>
      <LoveStory/>
      <RsvpSection/>
+     <Mengundang/>
      <Footer/>
      
     </>
