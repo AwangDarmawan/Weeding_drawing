@@ -23,9 +23,9 @@ function App() {
           <Routes>
            <Route path="/" element={<AdminPage/>} />
                <Route path="/admin/pesan" element={<PesanAdminPage/>} />
-
-               <Route path="/:nama" element={<CoverPage/>} />
              <Route path="/home" element={<HomePage />} />
+               <Route path="/:nama" element={<CoverPage/>} />
+            
           </Routes>
       <ToastContainer
         position="top-right"
