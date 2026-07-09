@@ -24,7 +24,7 @@ function App() {
            <Route path="/" element={<AdminPage/>} />
                <Route path="/admin/pesan" element={<PesanAdminPage/>} />
              <Route path="/undangan/adit&dinda" element={<HomePage />} />
-               <Route path="/cover/:nama" element={<CoverPage/>} />
+               <Route path="/:nama" element={<CoverPage/>} />
             
           </Routes>
       <ToastContainer
