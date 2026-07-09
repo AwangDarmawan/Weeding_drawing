@@ -420,8 +420,7 @@ export default function CoverSection() {
           </p> */}
 
            <p
-           data-aos ="fade-down-left"
-            data-aos-delay="4700"
+           
             className="
            
 
