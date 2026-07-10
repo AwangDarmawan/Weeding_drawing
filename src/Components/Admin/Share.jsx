@@ -3,12 +3,15 @@ export const encodeForShare = (text) => encodeURIComponent(text);
 
 // generate link undangan
 export const generateInvitationLink = (name) =>
-  // name ? `https://alpi-ndah-nikahflix.vercel.app/${name.toLowerCase()}` : "";
+  
+  // name
+  //   ? `https://weeding-drawing.vercel.app/${encodeURIComponent(
+  //       name.toLowerCase()
+  //     )}`
+  //   : "";
   name
-    ? `https://weeding-drawing.vercel.app/${encodeURIComponent(
-        name.toLowerCase()
-      )}`
-    : "";
+  ? `https://weeding-drawing.vercel.app/${encodeURIComponent(name)}`
+  : "";
 
 // generate teks undangan lengkap
 export const generateShareText = (name, invitationLink) =>
