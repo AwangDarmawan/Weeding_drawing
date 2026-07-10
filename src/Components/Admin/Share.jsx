@@ -5,7 +5,7 @@ export const encodeForShare = (text) => encodeURIComponent(text);
 export const generateInvitationLink = (name) =>
   // name ? `https://alpi-ndah-nikahflix.vercel.app/${name.toLowerCase()}` : "";
   name
-    ? `https://weeding-drawing.vercel.app${encodeURIComponent(
+    ? `https://weeding-drawing.vercel.app/${encodeURIComponent(
         name.toLowerCase()
       )}`
     : "";
